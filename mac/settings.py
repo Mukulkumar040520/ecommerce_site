@@ -24,7 +24,6 @@ SECRET_KEY = 'zw_1^)@b$wo75ng$_cu9l8sg#dwv96o6)jh=wa7h!9er1cxdj!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = []
 
 
@@ -123,7 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 #Activate Django Heroku
-django_heroku.setting(locals())
+django_heroku.settings(locals())
 
 #managing media
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
