@@ -1,0 +1,24 @@
+{% extends 'shop/basic.html' %}
+{% block title%} Scobbuy.com Tracker{% endblock %}
+{% block body %}
+<div class="container">
+    {{response}}
+    <div class="col my-4">
+
+        <h2>Payment status regarding your order Id {{response.ORDERID}}</h2>
+        {% if response.RESPCODE == '01' %}
+        <h1> ORDER SUCCESS </h1>
+        <h3> Please note your order id to track your order </h3>
+        <h1>Thank you for shopping your Order is deliver with in 3 to 7 days </h1>
+        {% else %}
+        <h1>ORDER FAILURE </h1>
+        {% endif%}
+
+    </div>
+
+</div>
+{% endblock %}
+{% block js %}
+<script>
+</script>
+{% endblock %}
