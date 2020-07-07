@@ -1,1 +1,1 @@
-web:qunicorn scobbuy.wsgi
+web:qunicorn mac.wsgi
